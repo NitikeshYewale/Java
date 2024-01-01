@@ -7,8 +7,8 @@ public class Factorial {
 	
 	public int getRecursiveFactorial(int n) {
 		if (n < 0) return -1;
-		else if (n < 2) return 1;
-		else return (n * getRecursiveFactorial(n-1));		
+		if (n < 2) return 1;
+		return (n * getRecursiveFactorial(n-1));		
 	}
 	
 	public int getIterativeFactorial(int n) {
